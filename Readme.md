@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Семен Згурский](https://up.htmlacademy.ru/htmlcss/25/user/252845).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
