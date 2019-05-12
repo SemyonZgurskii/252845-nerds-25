@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nerds</title>
+</head>
+<body>  
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="img/nerds-logo.svg" alt="Логотип студии Nerds" width="160" height="65">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="main-header-basket">
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  </body>
+  <main class="main-content">
+    <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
+
+    <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="services-list">
+        <li class="services-item services-web">
+          <h3>Веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#" class="order-button">Заказать</a>
+        </li>
+        <li class="services-item services-apps">
+          <h3>Приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#" class="order-button">Заказать</a>
+        </li>
+        <li class="services-item services-presentations">
+          <h3>Презентации</h3>
+          <p>Вы даже не подозреваете насколько вы изумительны!</p>
+          <a href="#" class="order-button">Заказать</a>
+        </li>  
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <ul class="footer-social">
+      <li><a href="vk.page">Вконтакте</a></li>
+      <li><a href="facebook.page">Фейсбук</a></li>
+      <li><a href="instagram.page">Инстаграмм</a></li>
+    </ul>
+    <p class="footer-discount">
+      <b>Давайте дружить, это выгодно!</b>
+      Скидка 10% для друзей из социальных сетей
+    </p>
+  </footer>
+
+</body>
 </html>
