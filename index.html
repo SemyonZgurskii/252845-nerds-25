@@ -18,22 +18,39 @@
         <li><a href="clients.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="main-header-basket">
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
+      </ul>      
+        <a class="main-header-basket" href="#">Корзина</a>
+      </nav>
   </header>
 
   <main class="main-content">
     <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
 
     <section class="slider">
-      <div class="slider-container">
-        
-      </div>
+      <!-- первый слайд -->
+      <p class="slider-announcement">
+        <span>Долго, дорого, скурпулезно.</span>
+      </p>
+      <p>
+          Математически выверенный дизайн для вашего сайта или мобильного приложения.
+      </p>
+      <a class="slider-announcement-button" href="#">Узнать больше</a>
+      <!-- второй слайд -->
+      <p class="slider-announcement">
+        <span>Любим математику как никто другой</span>
+      </p>
+      <p>
+        Никакого креатива, только математические формулы для расчета идеальных пропорций.
+      </p>
+      <a class="slider-announcement-button" href="#">Узнать больше</a>
+      <!-- третий слайд -->
+      <p class="slider-announcement">
+        <span>Только ночь, только хардкор</span>
+      </p>
+      <p>
+        Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+      </p>
+      <a class="slider-announcement-button" href="#">Узнать больше</a>
     </section>
 
     <section class="services">
@@ -57,6 +74,73 @@
       </ul>
     </section>
 
+    <section class="info">
+      <h2 class="visually-hidden">Информация о студии</h2>
+      <h3>
+        Мы-маленькая, но гордая дизайн-студия из Краснодара.        
+      </h3>
+      <p class="info-principles">
+          Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+      </p>
+      <h3>Выполняем заказы на разработку:</h3>
+      <ul class="info-orders">
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>   
+        <li>Слайдшоу и видео для корпоратвных презентаций</li>
+      </ul>
+      <img class="info-logo" src="img/info-section-logo.png" alt="логотип студии Nerds" width="360" height="208">
+      <h3>с 2004 года любим точность во всем:</h3>
+      <ul class="info-numbers">
+        <li><span>146<sup>%</sup></span>Уровень самоотдачи</li>
+        <li><span>100<sup>%</sup></span>Соблюдение сроков</li>
+        <li><span>50<sup>%</sup></span>Минимальная предоплата</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2 class="visually-hidden">Наши проекты</h2>
+      <ul class="projects-list">
+        <li><a href"#"><img src="img/html-logo.png" alt="логотип html-academy">Html-academy</a></li>
+        <li><a href"#"><img src="img/borodinski-logo.png" alt="Логотип барбершопа Borodinski">Барбершоп "Borodinski"</a></li>
+        <li><a href"#"><img src="img/pink-logo.png" alt="Логотип Pink">Pink</a></li>
+        <li><a href"#"><img src="img/mishka-logo.png" alt="Логотип Mishka">Mishka</a></li>
+      </ul>
+    </section>
+
+    <section class="location">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <img class="location-map" width="1440" height="420" src="img/map-image.jpg" alt="Мы находимся по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
+      <div class="location-info">
+        <p><span>nerds design studio</span></p>
+        <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+        <p>тел.+7 (812) 275-75-75</p>
+        <a class="location-write-button" href="#">Напишите нам</a>
+      </div>
+    </section>
+
+    <section class="write-us-form">
+      <form action="" method="POST" class="write-us">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <p class="half-width-field">
+            <label>Ваше имя:
+              <input type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+          </p>
+          <p class="half-width-field">
+            <label>Ваш e-mail:
+              <input type="email" name="email" placeholder="email@example.com">
+            </label>
+          </p>
+          <p class="write-us-text">
+            <label>Текст письма:
+              <textarea value="dsaf">В свободной форме</textarea>
+            </label>
+          </p>
+        </fieldset>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
   </main>
 
   <footer class="main-footer">
