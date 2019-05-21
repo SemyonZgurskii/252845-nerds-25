@@ -77,11 +77,13 @@
         </fieldset>
         <button type="button">Показать</button>
       </form>
-      <p class="sorting-options">
-        <h3>Сортировать:</h3>
-        <button type="button">по цене</button>
-        <button type="button">по типу</button>
-        <button type="button">по названию</button>
+      <h3>Сортировать:</h3>
+      <p class="sorting-options">        
+        <a href="#">по цене</a>
+        <a href="#">по типу</a>
+        <a href="#">по названию</a>
+        <a href="#">по возрастанию</a>
+        <a href="#">по убыванию</a>
       </p>
     </section>
 
@@ -134,9 +136,9 @@
       <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
           <li class="pagination-item"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <button type="button">следующая</button>
-        </ul>
+          <li class="pagination-item"><a href="#">3</a></li>          
+      </ul>
+      <button type="button">следующая</button>
     </section>
 
     <section class="location">
@@ -151,7 +153,8 @@
       </section>
   
       <section class="write-us-form">
-        <form action="" method="POST" class="write-us">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form action="https://echo.htmlacademy.ru/" method="POST" class="write-us">
           <fieldset>
             <legend>Напишите нам</legend>
             <p class="half-width-field">
@@ -166,7 +169,7 @@
             </p>
             <p class="write-us-text">
               <label>Текст письма:
-                <textarea value="dsaf">В свободной форме</textarea>
+                <textarea>В свободной форме</textarea>
               </label>
             </p>
           </fieldset>
