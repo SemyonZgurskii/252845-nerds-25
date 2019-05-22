@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+ 
+.main-header-logo[href]:hover img {
+  opacity: 0.8;
+}
+
+.main-header-logo[href]:active img {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.main-navigation a,
+.site-navigation a {
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #fb565a;
+}
+
+.main-navigation a:active,
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation a:not([href]),
+.site-navigation a:not([href]) {
+  text-decoration: underline;
+  text-decoration-color: #fb565a;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-discount {
+  color: #444444;
+  line-height: 22px;
+}
+
+.footer-discount b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+
+.services-item .button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.templates-item-popup .button:hover,
+.services-web .button:hover {
+  background-color: #e74246;
+}
+
+.templates-item-popup .button:active,
+.services-web .button:active {
+  background-color: #d7373b;
+}
+
+.services-apps .button {
+  background-color: #00ca74;
+}
+
+.services-apps .button:hover {
+  background-color: #00bc6c;
+}
+
+.services-apps .button:active {
+  background-color: #00aa62;
+}
+
+.services-presentations .button {
+  background-color: #efc84a;
+}
+
+.services-presentations .button:hover {
+  background-color: #eab534;
+}
+
+.services-presentations .button:active {
+  background-color: #e5a722;
+}
+
+.page-name {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000000;
+}
+
+.templates-filter {
+  line-height: 20px;
+}
+
+.templates-filter fieldset {
+  border: none;
+}
+
+.templates-filter legend{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.templates-filter .button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.templates-filter .button:hover {
+  background-color: #dfdfdf;
+}
+
+.templates-filter .button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d5d5d5;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
+
+.templates-list {
+  list-style: none;
+}
+
+.templates-item-popup h3 {
+  color: 000000;
+  font-weight: 700;
+}
+
+.templates-item-popup p {
+  color: 666666;
+  line-height: 18px;
+}

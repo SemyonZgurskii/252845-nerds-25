@@ -2,9 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,3.." rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,.." rel="stylesheet"> 
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>  
 
@@ -34,7 +36,7 @@
       <p>
           Математически выверенный дизайн для вашего сайта или мобильного приложения.
       </p>
-      <a class="slider-announcement-button" href="#">Узнать больше</a>
+      <a class="button slider-announcement-button" href="#">Узнать больше</a>
       <!-- второй слайд -->
       <p class="slider-announcement">
         <span>Любим математику как никто другой</span>
@@ -42,7 +44,7 @@
       <p>
         Никакого креатива, только математические формулы для расчета идеальных пропорций.
       </p>
-      <a class="slider-announcement-button" href="#">Узнать больше</a>
+      <a class="button slider-announcement-button" href="#">Узнать больше</a>
       <!-- третий слайд -->
       <p class="slider-announcement">
         <span>Только ночь, только хардкор</span>
@@ -50,7 +52,7 @@
       <p>
         Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
       </p>
-      <a class="slider-announcement-button" href="#">Узнать больше</a>
+      <a class="button slider-announcement-button" href="#">Узнать больше</a>
     </div>
 
     <section class="services">
@@ -59,17 +61,17 @@
         <li class="services-item services-web">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#" class="order-button">Заказать</a>
+          <a href="#" class="button">Заказать</a>
         </li>
         <li class="services-item services-apps">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="order-button">Заказать</a>
+          <a href="#" class="button">Заказать</a>
         </li>
         <li class="services-item services-presentations">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете насколько вы изумительны!</p>
-          <a href="#" class="order-button">Заказать</a>
+          <a href="#" class="button">Заказать</a>
         </li>  
       </ul>
     </section>
@@ -89,12 +91,19 @@
         <li>Слайдшоу и видео для корпоратвных презентаций</li>
       </ul>
       <img class="info-logo" src="img/info-section-logo.png" alt="логотип студии Nerds" width="360" height="208">
-      <h3>с 2004 года любим точность во всем:</h3>
-      <ul class="info-numbers">
-        <li><span>146<sup>%</sup></span>Уровень самоотдачи</li>
-        <li><span>100<sup>%</sup></span>Соблюдение сроков</li>
-        <li><span>50<sup>%</sup></span>Минимальная предоплата</li>
-      </ul>
+      <table class="info-numbers">
+        <caption><h3>с 2004 года любим точность во всём:</h3></caption>
+        <tr>
+          <th>146<sup>%</sup></th>
+          <th>100<sup>%</sup></th>
+          <th>50<sup>%</sup></th>
+        </tr>
+        <tr>
+          <td>Уровень самоотдачи</td>
+          <td>Соблюдение сроков</td>
+          <td>Минимальная предоплата</td>
+        </tr>        
+      </table>
     </section>
 
     <section class="projects">
@@ -119,10 +128,9 @@
     </section>
 
     <section class="write-us-form">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form action="https://echo.htmlacademy.ru/" method="POST" class="write-us">
         <fieldset>
-          <legend>Напишите нам</legend>
+          <h2>Напишите нам</h2>
           <p class="half-width-field">
             <label>Ваше имя:
               <input type="text" name="name" placeholder="Имя Фамилия">
@@ -151,7 +159,7 @@
       <li><a href="instagram.page">Инстаграмм</a></li>
     </ul>
     <p class="footer-discount">
-      <b>Давайте дружить, это выгодно!</b>
+      <b>Давайте дружить, это выгодно!</b><br>
       Скидка 10% для друзей из социальных сетей
     </p>
   </footer>
