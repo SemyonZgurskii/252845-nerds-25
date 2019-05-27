@@ -22,7 +22,7 @@
       </ul>      
         <a class="main-header-basket" href="#">Корзина</a>
       </nav>
-  </header>
+    </header>
 
   <main class="main-content">
     <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
@@ -126,27 +126,23 @@
       </div>
     </section>
 
-    <section class="write-us-form">
-      <form action="https://echo.htmlacademy.ru/" method="POST" class="write-us">
-        <fieldset>
-          <h2>Напишите нам</h2>
-          <p class="half-width-field">
-            <label>Ваше имя:
-              <input type="text" name="name" placeholder="Имя Фамилия">
-            </label>
-          </p>
-          <p class="half-width-field">
-            <label>Ваш e-mail:
-              <input type="email" name="email" placeholder="email@example.com">
-            </label>
-          </p>
-          <p class="write-us-text">
-            <label>Текст письма:
-              <textarea>В свободной форме</textarea>
-            </label>
-          </p>
-        </fieldset>
-        <button type="submit">Отправить</button>
+    <section class="write-us-wrapper">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <h2>Напишите нам</h2>
+        <div class="write-us-field-container">
+          <label>Ваше имя:
+            <input class="write-us-field input-field" type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label>Ваш e-mail:
+            <input class="write-us-field input-field" type="email" name="email" placeholder="email@example.com">
+          </label>         
+        </div>
+        <p class="write-us-text">
+          <label>Текст письма:</label>
+            <textarea class="input-field" rows="6" placeholder="В свободной форме"></textarea>
+          
+        </p>
+        <button class="button button-red" type="submit">Отправить</button>
       </form>
     </section>
   </main>

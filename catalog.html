@@ -25,122 +25,126 @@
   </header>
 
   <main class="catalog-content">
-    <h1 class="page-name">Магазин готовых шаблонов</h1>
+    <div class="page-name-wrapper">
+      <h1 class="page-name">Магазин готовых шаблонов</h1>
+    </div>
 
-    <section class="templates-filter">
-      <h2 class="visually-hidden">Фильтр шаблонов</h2>
-      <form action="#" class="filter-form">
-        <fieldset class="filter-form-prise">
-          <legend>Стоимость:</legend>
-          <div class="priсe-range-container">
-            <input type="range" name="min-priсe" min="0" max="10000" step="1000">
-          </div>
-          <output name="min-priсe-output"></output>
-          <output name="max-priсe-output"></output>
-        </fieldset>
-        <fieldset class="filter-form-grid">
-          <legend>Сетка:</legend>
+    <div class="filter-list-wrapper">
+      <section class="templates-filter">
+        <h2 class="visually-hidden">Фильтр шаблонов</h2>
+        <form action="#" class="filter-form">
+          <fieldset class="filter-form-prise">
+            <legend>Стоимость:</legend>
+            <div class="priсe-range-container">
+              <input type="range" name="min-priсe" min="0" max="10000" step="1000">
+            </div>
+            <output name="min-priсe-output"></output>
+            <output name="max-priсe-output"></output>
+          </fieldset>
+          <fieldset class="filter-form-grid">
+            <legend>Сетка:</legend>
+              <label>
+                <input type="radio" name="grid-filter" value="adaptive" checked>
+                Адаптивная
+              </label>
+              <label>
+                <input type="radio" name="grid-filter" value="fixed">
+                Фиксированная
+              </label>
+              <label>
+                <input type="radio" name="grid-filter" value="stretched">
+                Резиновая
+              </label>
+          </fieldset>
+          <fieldset class="filter-form-features">
+            <legend>Особенности:</legend>
             <label>
-              <input type="radio" name="grid-filter" value="adaptive" checked>
-              Адаптивная
+              <input type="checkbox" name="slider" checked>
+              Слайдер
             </label>
             <label>
-              <input type="radio" name="grid-filter" value="fixed">
-              Фиксированная
+              <input type="checkbox" name="adventage-block">
+              Блок премуществ
             </label>
             <label>
-              <input type="radio" name="grid-filter" value="stretched">
-              Резиновая
+              <input type="checkbox" name="news" checked>
+              Новости
             </label>
-        </fieldset>
-        <fieldset class="filter-form-features">
-          <legend>Особенности:</legend>
-          <label>
-            <input type="checkbox" name="slider" checked>
-            Слайдер
-          </label>
-          <label>
-            <input type="checkbox" name="adventage-block">
-            Блок премуществ
-          </label>
-          <label>
-            <input type="checkbox" name="news" checked>
-            Новости
-          </label>
-          <label>
-            <input type="checkbox" name="gallery">
-            Галерея
-          </label>
-          <label>
-            <input type="checkbox" name="basket">
-            Корзина
-          </label>
-        </fieldset>
-        <button type="button" class="button">Показать</button>
-      </form>
-      <h3>Сортировать:</h3>
-      <p class="sorting-options">        
-        <a href="#">по цене</a>
-        <a href="#">по типу</a>
-        <a href="#">по названию</a>
-        <a href="#">по возрастанию</a>
-        <a href="#">по убыванию</a>
-      </p>
-    </section>
-
-    <section class="templates-preview">
-      <h2 class="visually-hidden">Список шаблонов</h2>
-      <ul class="templates-list">
-        <li><a href="#"><img src="img/sedona.jpg" alt="sedona-template-image" width="360" height="618"></a>
-          <div class="templates-item-popup">
-            <h3>Sedona</h3>
-            <p>Информационный сайт для туристов</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
-          </div>
-        </li>
-        <li><a href="#"><img src="img/pink.jpg" alt="pink-template-image" width="360" height="618"></a>
-          <div class="templates-item-popup">
-            <h3>Pink APP</h3>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
-          </div>
-        </li>
-        <li><a href="#"><img src="img/barbershop.jpg" alt="borodinski-template-image" width="360" height="618"></a>
-          <div class="templates-item-popup">
-            <h3>Barbershop</h3>
-            <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
-          </div>
-        </li>
-        <li><a href="#"><img src="img/mishka.jpg" alt="mishka-template-image" width="360" height="618"></a>
-          <div class="templates-item-popup">
-            <h3>Mishka</h3>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
-          </div>
-        </li>
-        <li><a href="#"><img src="img/aplus.jpg" alt="aplus-template-image" width="360" height="618"></a>
-          <div class="templates-item-popup">
-            <h3>A plus</h3>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
-          </div>
-        </li>
-        <li><a href="#"><img src="img/kvast.jpg" alt="kvast-template-image" width="360" height="618"></a>
-          <div class="templates-item-popup">
-            <h3>Kvast</h3>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="button button-red" href="#">9 900 РУБ.</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-          <li class="pagination-item"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>          
-      </ul>
-      <button type="button">следующая</button>
-    </section>
+            <label>
+              <input type="checkbox" name="gallery">
+              Галерея
+            </label>
+            <label>
+              <input type="checkbox" name="basket">
+              Корзина
+            </label>
+          </fieldset>
+          <button type="button" class="button">Показать</button>
+        </form>
+      </section>
+      
+      <section class="templates-preview">
+        <h2 class="visually-hidden">Список шаблонов</h2>
+        <h3>Сортировать:</h3>
+        <p class="sorting-options">        
+          <a href="#">по цене</a>
+          <a href="#">по типу</a>
+          <a href="#">по названию</a>
+          <a href="#">по возрастанию</a>
+          <a href="#">по убыванию</a>
+        </p>
+        <ul class="templates-list">
+          <li class="templates-item"><a href="#"><img src="img/sedona.jpg" alt="sedona-template-image" width="360" height="618"></a>
+            <div class="templates-item-popup">
+              <h3>Sedona</h3>
+              <p>Информационный сайт для туристов</p>
+              <a class="button button-red" href="#">9 900 РУБ.</a>
+            </div>
+          </li>
+          <li class="templates-item"><a href="#"><img src="img/pink.jpg" alt="pink-template-image" width="360" height="618"></a>
+            <div class="templates-item-popup">
+              <h3>Pink APP</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="button button-red" href="#">9 900 РУБ.</a>
+            </div>
+          </li>
+          <li class="templates-item"><a href="#"><img src="img/barbershop.jpg" alt="borodinski-template-image" width="360" height="618"></a>
+            <div class="templates-item-popup">
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a class="button button-red" href="#">9 900 РУБ.</a>
+            </div>
+          </li>
+          <li class="templates-item"><a href="#"><img src="img/mishka.jpg" alt="mishka-template-image" width="360" height="618"></a>
+            <div class="templates-item-popup">
+              <h3>Mishka</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a class="button button-red" href="#">9 900 РУБ.</a>
+            </div>
+          </li>
+          <li class="templates-item"><a href="#"><img src="img/aplus.jpg" alt="aplus-template-image" width="360" height="618"></a>
+            <div class="templates-item-popup">
+              <h3>A plus</h3>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a class="button button-red" href="#">9 900 РУБ.</a>
+            </div>
+          </li>
+          <li class="templates-item"><a href="#"><img src="img/kvast.jpg" alt="kvast-template-image" width="360" height="618"></a>
+            <div class="templates-item-popup">
+              <h3>Kvast</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a class="button button-red" href="#">9 900 РУБ.</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+            <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+            <li class="pagination-item"><a>2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>          
+        </ul>
+        <button type="button">следующая</button>
+      </section>
+    </div>
 
     <section class="location">
         <h2 class="visually-hidden">Наш адрес</h2>
@@ -153,27 +157,23 @@
         </div>
       </section>
   
-      <section class="write-us-form">
-        <form action="https://echo.htmlacademy.ru/" method="POST" class="write-us">
-          <fieldset>
-            <h2 class="visually-hidden">Напишите нам</h2>
-            <p class="half-width-field">
-              <label>Ваше имя:
-                <input type="text" name="name" placeholder="Имя Фамилия">
-              </label>
-            </p>
-            <p class="half-width-field">
-              <label>Ваш e-mail:
-                <input type="email" name="email" placeholder="email@example.com">
-              </label>
-            </p>
-            <p class="write-us-text">
-              <label>Текст письма:
-                <textarea>В свободной форме</textarea>
-              </label>
-            </p>
-          </fieldset>
-          <button type="submit">Отправить</button>
+      <section class="write-us-wrapper">
+        <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <h2>Напишите нам</h2>
+          <div class="write-us-field-container">
+            <label>Ваше имя:
+              <input class="write-us-field input-field" type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+            <label>Ваш e-mail:
+              <input class="write-us-field input-field" type="email" name="email" placeholder="email@example.com">
+            </label>         
+          </div>
+          <p class="write-us-text">
+            <label>Текст письма:</label>
+              <textarea class="input-field" rows="6" placeholder="В свободной форме"></textarea>
+            
+          </p>
+          <button class="button button-red" type="submit">Отправить</button>
         </form>
       </section>
   </main>
