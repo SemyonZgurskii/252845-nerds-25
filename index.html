@@ -10,15 +10,15 @@
 <body>  
 
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" alt="Логотип студии Nerds" width="160" height="65">
       </a>
       <ul class="site-navigation">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="clients.html">Клиенты</a></li>
+        <li><a href="#">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>      
         <a class="main-header-basket" href="#">Корзина</a>
       </nav>
@@ -27,34 +27,35 @@
   <main class="main-content">
     <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
 
-    <div class="slider">
-      <!-- первый слайд -->
-      <p class="slider-announcement">
-        <span>Долго, дорого, скурпулезно.</span>
-      </p>
-      <p>
-          Математически выверенный дизайн для вашего сайта или мобильного приложения.
-      </p>
-      <a class="button slider-announcement-button" href="#">Узнать больше</a>
-      <!-- второй слайд -->
-      <p class="slider-announcement">
-        <span>Любим математику как никто другой</span>
-      </p>
-      <p>
-        Никакого креатива, только математические формулы для расчета идеальных пропорций.
-      </p>
-      <a class="button slider-announcement-button" href="#">Узнать больше</a>
-      <!-- третий слайд -->
-      <p class="slider-announcement">
-        <span>Только ночь, только хардкор</span>
-      </p>
-      <p>
-        Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-      </p>
-      <a class="button slider-announcement-button" href="#">Узнать больше</a>
-    </div>
+    <section class="slider">
+      <div class="container">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="slider-controls">
+          <i class="active"></i>            
+          <i></i>
+          <i></i>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item">
+            <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slider-item-button button button-red"  href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Любим математику как никто другой</h3>
+            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="slider-item-button button button-red"  href="#">Узнать больше</a>
+          </li>
+          <li class="slider-item">
+            <h3>Только ночь,<br> только хардкор</h3>
+            <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slider-item-button button button-red"  href="#">Узнать больше</a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    <section class="services">
+    <section class="services container">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item services-web">
@@ -75,88 +76,109 @@
       </ul>
     </section>
 
-    <section class="info">
+    <section class="info container">
       <h2 class="visually-hidden">Информация о студии</h2>
-      <h3>
-        Мы-маленькая, но гордая дизайн-студия из Краснодара.        
-      </h3>
-      <p class="info-principles">
-          Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
-      </p>
-      <h3>Выполняем заказы на разработку:</h3>
-      <ul class="info-orders">
-        <li>Веб-сайтов любой сложности</li>
-        <li>Мобильных приложений для iOS и Android</li>   
-        <li>Слайдшоу и видео для корпоратвных презентаций</li>
-      </ul>
-      <img class="info-logo" src="img/info-section-logo.png" alt="логотип студии Nerds" width="360" height="208">
-      <table class="info-numbers">
-        <caption><h3>с 2004 года любим точность во всём:</h3></caption>
-        <tr>
-          <th>146<sup>%</sup></th>
-          <th>100<sup>%</sup></th>
-          <th>50<sup>%</sup></th>
-        </tr>
-        <tr>
-          <td>Уровень самоотдачи</td>
-          <td>Соблюдение сроков</td>
-          <td>Минимальная предоплата</td>
-        </tr>        
-      </table>
+     <div class="info-left-column">
+        <h3 class="info-we-are">
+          Мы — маленькая, но гордая дизайн-студия из Краснодара.        
+        </h3>
+        <p class="info-principles">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+        </p>
+        <h3>выполняем заказы на разработку:</h3>
+        <ul class="info-orders-list">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>   
+          <li>Слайдшоу и видео для корпоратвных презентаций</li>
+        </ul>
+     </div>
+     <div class="info-right-column">
+        <img class="info-logo" src="img/info-section-logo.png" alt="логотип студии Nerds" width="360" height="208">
+        <table class="info-numbers">
+          <caption><h3>с 2004 года любим точность во всём:</h3></caption>
+          <tr>
+            <th>146<sup>%</sup></th>
+            <th>100<sup>%</sup></th>
+            <th>50<sup>%</sup></th>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>        
+        </table>
+     </div>
     </section>
 
-    <section class="projects">
+    <section class="projects container">
       <h2 class="visually-hidden">Наши проекты</h2>
       <ul class="projects-list">
-        <li><a href="#"><img src="img/html-logo.png" alt="логотип html-academy">Html-academy</a></li>
-        <li><a href="#"><img src="img/borodinski-logo.png" alt="Логотип барбершопа Borodinski">Барбершоп "Borodinski"</a></li>
-        <li><a href="#"><img src="img/pink-logo.png" alt="Логотип Pink">Pink</a></li>
-        <li><a href="#"><img src="img/mishka-logo.png" alt="Логотип Mishka">Mishka</a></li>
+        <li><a href="#"><img src="img/html-logo.png" width="199" height="68" alt="логотип html-academy"><span class="visually-hidden">Html-academy</span></a></li>
+        <li><a href="#"><img src="img/borodinski-logo.png" width="209" height="90" alt="Логотип барбершопа Borodinski"><span class="visually-hidden">Барбершоп "Borodinski</span></a></li>
+        <li><a href="#"><img src="img/pink-logo.png" width="185" height="52" alt="Логотип Pink"><span class="visually-hidden">Pink</span></a></li>
+        <li><a href="#"><img src="img/mishka-logo.png" width="173" height="84" alt="Логотип Mishka"><span class="visually-hidden">Mishka</span></a></li>
       </ul>
     </section>
 
     <section class="location">
       <h2 class="visually-hidden">Наш адрес</h2>
-      <img class="location-map" width="1440" height="420" src="img/map-image.jpg" alt="Мы находимся по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
-      <div class="location-info">
-        <p><span>nerds design studio</span></p>
-        <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-        <p>тел.+7 (812) 275-75-75</p>
-        <a class="location-write-button" href="#">Напишите нам</a>
-      </div>
+      <!-- <img class="location-map" width="1440" height="420" src="img/map-image.jpg" alt="Мы находимся по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8"> -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716354532!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559157044660!5m2!1sru!2sru" width="100%" height="417" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="location-info-container">
+        <div class="location-info">
+          <h3 class="visually-hidden">Адрес студии Nerds и кнопка обратной связи</h3>
+          <b>nёrds design studio</b>
+          <p>191186, Санкт-Петербург,<br> ул. Б.Конюшенная, д. 19/8</p>
+          <p>тел.+7 (812) 275-75-75</p>
+          <a class="button button-red" href="#">Напишите нам</a>
+        </div>
+      </div class="location-info-container">
     </section>
-
-    <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="POST">
-      <h2>Напишите нам</h2>
-      <div class="write-us-field-container">
-        <label>Ваше имя:
-          <input class="write-us-field input-field" type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>Ваш e-mail:
-          <input class="write-us-field input-field" type="email" name="email" placeholder="email@example.com">
-        </label>         
-      </div>
-      <p class="write-us-text">
-        <label>Текст письма:</label>
-          <textarea class="input-field" rows="6" placeholder="В свободной форме"></textarea>
-        
-      </p>
-      <button class="button button-red" type="submit">Отправить</button>
-    </form>
     
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <ul class="footer-social">
-      <li><a href="vk.page">Вконтакте</a></li>
-      <li><a href="facebook.page">Фейсбук</a></li>
-      <li><a href="instagram.page">Инстаграмм</a></li>
+      <li>
+        <a class="social-button social-vk" href="#">
+          <img src="img/vk-icon.svg" alt="vkontake logo" width="26" height="15">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li>
+        <a class="social-button social-fb" href="#">
+          <img src="img/fb-icon.svg" alt="facebook logo" width="21" height="21">
+          <span class="visually-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li>
+        <a class="social-button social-insta" href="#">
+          <img src="img/insta-icon.svg" alt="instagram logo" width="21" height="21">
+          <span class="visually-hidden">Инстаграмм</span>
+        </a>
+      </li>
     </ul>
     <p class="footer-discount">
-      <b>Давайте дружить, это выгодно!</b><br>
+      <b>Давайте дружить, это выгодно!</b>
       Скидка 10% для друзей из социальных сетей
     </p>
   </footer>
+
+  <form class="write-us-form" action="https://echo.htmlacademy.ru/" method="POST">
+    <h2>Напишите нам</h2>
+    <div class="write-us-field-container">
+      <label>Ваше имя:
+        <input class="write-us-field input-field" type="text" name="name" placeholder="Имя Фамилия">
+      </label>
+      <label>Ваш e-mail:
+        <input class="write-us-field input-field" type="email" name="email" placeholder="email@example.com">
+      </label>         
+    </div>
+    <label>Текст письма:</label>
+      <textarea class="write-us-text input-field" rows="6" placeholder="В свободной форме"></textarea>      
+    <button class="button button-red" type="submit">Отправить</button>
+    <button class="form-button-close" type="button"></button>
+  </form>
 
 </body>
 </html>
