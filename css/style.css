@@ -64,6 +64,7 @@ input[type="radio"].visually-hidden {
 
 .button:active {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+  outline: none;
 }
 
 .button-red {
@@ -493,8 +494,8 @@ input[type="radio"].visually-hidden {
   border-spacing: 0;
 }
 
-.info-numbers th {
-  padding-right: 15px;
+.info-numbers-header {
+  padding-right: 19px;
   padding-bottom: 20px;
   
   font-size: 45px;  
@@ -503,7 +504,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.info-numbers td {
+.info-numbers-header sup {
+  font-size: 28px;
+}
+
+.info-numbers-cell {
   padding-top: 10px;
   
   line-height: 18px;
@@ -520,7 +525,7 @@ input[type="radio"].visually-hidden {
 .projects-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 46px 0 37px 0;
@@ -531,6 +536,9 @@ input[type="radio"].visually-hidden {
 .projects-list li {
   position: relative;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 260px;
   text-align: center;
 }
@@ -818,7 +826,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-.features-filter-checkbox:hover + label::before {
+.features-filter-checkbox:hover + label::before,
+.features-filter-checkbox:focus + label::before {
   opacity: 1;
 }
 
@@ -967,6 +976,7 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
+.templates-item:focus .templates-item-popup,
 .templates-item:hover .templates-item-popup {
   display: block;
 }
