@@ -57,6 +57,7 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   text-transform: uppercase;
 
+  cursor: pointer;
   border: none;
   border-radius: 5px;
 }
