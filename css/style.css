@@ -419,7 +419,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
 }
 
@@ -434,12 +437,12 @@ input[type="radio"].visually-hidden {
 }
 
 .info-principles {
-  margin-bottom: 37px;
+  margin-bottom: 39px;
 }
 
 .info-orders-list {
   padding: 0;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-left: 37px;
   margin: 0;
 
@@ -472,31 +475,38 @@ input[type="radio"].visually-hidden {
   width: 360px;
 }
 
+.info-right-column h3 {
+  margin: 0;
+  margin-bottom: 50px;
+  padding-right: 14px;
+
+  text-align: right;
+}
+
 .info-logo {
   margin-bottom: 30px;  
 }
 
 .info-numbers {
-  width: 350px;
-}
-
-.info-numbers caption {
-  margin-bottom: 30px;
-
-  color: #000000;
+  width: 360px;
+  border-spacing: 0;
 }
 
 .info-numbers th {
-  padding-right: 10px;
+  padding-right: 15px;
+  padding-bottom: 20px;
   
-  font-size: 45px;
+  font-size: 45px;  
   text-align: left;
 
   color: #000000;
 }
 
 .info-numbers td {
-  /* padding-top: 20px; */
+  padding-top: 10px;
+  
+  line-height: 18px;
+  vertical-align: middle;
 }
 
 .projects {
@@ -512,7 +522,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   margin: 0;
-  padding: 46px 0 35px 0;
+  padding: 46px 0 37px 0;
 
   list-style: none;
 }
@@ -524,14 +534,15 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.projects-list li::after {
+.projects-list li:not(:nth-child(4n))::after {
   position: absolute;
-  /* top: 25%; */
+  top: 50%;
   right: -20px;
   
   content: "";
   width: 2px;
   height: 52px;
+  margin-top: -30px;
 
   background-color: #eeeeee;
 }
@@ -588,7 +599,8 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.templates-filter .button {
+.templates-filter .button,
+.pagination-list .button {
   width: 260px;
   height: 50px;
   
@@ -602,10 +614,12 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
 }
 
+.pagination-list .button:hover,
 .templates-filter .button:hover {
   background-color: #dfdfdf;
 }
 
+.pagination-list .button:active,
 .templates-filter .button:active {
   color: rgba(0, 0, 0, 0.3);
 
@@ -644,13 +658,51 @@ input[type="radio"].visually-hidden {
   margin-bottom: 48px;
 }
 
-.range-drag {  
+.range-drag {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
   width: 260px;
   height: 80px;
   margin-bottom: 14px;
 
   border-radius: 5px;
   background-color: #eeeeee;
+}
+
+.range-drag-stripe {
+  position: relative;
+  
+  box-sizing: border-box;
+  width: 212px;
+  height: 2px;
+
+  background-color: #00ca74;
+  border-right: 60px solid #d7dcde;
+}
+
+.range-drag-stripe::before,
+.range-drag-stripe::after {
+  position: absolute;
+  
+  content: "";
+  width: 4px;
+  height: 4px;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px #cccdcd;
+}
+
+.range-drag-stripe::before {
+  left: -5px;
+  top: -10px;
+}
+
+.range-drag-stripe::after {
+  right: -5px;
+  top: -10px;
 }
 
 .range-drag-inputs{
@@ -765,6 +817,14 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
+.features-filter-checkbox + label::after {
+  position: absolute;
+  left: -35px;
+
+  content: "";
+  
+}
+
 .features-filter-checkbox:hover + label::before,
 .features-filter-checkbox:hover + label::after {
   opacity: 1;
@@ -780,6 +840,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   width: 760px;
   padding: 0;
+  margin-bottom: 28px;
   
   list-style: none;
 }
@@ -930,6 +991,17 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
+.templates-item-popup h3:hover,
+.templates-item-popup h3:focus {
+  color: #fb565a;
+}
+
+.templates-item-popup h3:active {
+  color: #000000;
+  
+  opacity: 0.3;
+}
+
 .templates-item-popup p {
   width: 200px;
   margin: 0 auto;
@@ -952,31 +1024,94 @@ input[type="radio"].visually-hidden {
   margin-bottom: 40px;
 }
 
+.pagination-list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
+
+  list-style: none;
+}
+
+.pagination-item {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  margin-right: 11px;
+  padding: 21px;
+  padding-top: 17px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+
+.pagination-item:hover,
+.pagination-item:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item:active {
+  color: rgba(0, 0, 0, 0.3);
+  
+  background-color: #d5d5d5;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.pagination-item.pagination-item-current {
+  padding: 18px;
+  padding-top: 14px;
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+
+.pagination-list .button {
+  width: 260px;
+  height: 50px;
+  padding-top: 17px;
+
+  color: #000000;
+  text-align: center;
+  
+  background-color: #eeeeee;
+  border-radius: 2px;
+}
+
 .location {
-  position: relative;
+  position: relative; 
+}
+
+.location-map-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+
+  margin-left: -720px;
 }
 
 .location-info {
+  position: absolute;
+  top: 54px;
+  left: 50%;
+  
   width: 220px;
+  margin-left: -580px;
   padding: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 
   background-color: #ffffff;
 }
 
-.location-info-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-
-  width: 1160px;
-  margin-left: -580px;
-  padding-top: 54px;
-}
-
 .location-info b {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 
   font-size: 18px;
   line-height: 30px;
@@ -990,20 +1125,20 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .location-info .button {
   width: 220px;
   height: 50px;
   padding: 16px 45px;
-  margin-top: 15px;
+  margin-top: 19px;
 }
 
 .main-footer {
   display: flex;  
   margin-bottom: 70px;
-  margin-top: 70px;  
+  margin-top: 61px;  
 }
 
 .footer-social {
@@ -1022,8 +1157,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
+  width: 79px;
+  height: 79px;
   
   background-color: #e1e1e1;
   border-radius: 50%;
