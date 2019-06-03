@@ -974,12 +974,14 @@ input[type="radio"].visually-hidden {
 
   display: none;
   width: 360px;
+  max-height: 545px;
   padding-top: 27px;
   
+  overflow: auto;
   background-color: #eeeeee;
 }
 
-.templates-item:focus .templates-item-popup,
+.templates-item:focus-within .templates-item-popup,
 .templates-item:hover .templates-item-popup {
   display: block;
 }
@@ -987,6 +989,7 @@ input[type="radio"].visually-hidden {
 .templates-item:hover::before {
   opacity: 1;
 }
+
 
 .templates-item-popup h3 {
   margin-top: 0;
