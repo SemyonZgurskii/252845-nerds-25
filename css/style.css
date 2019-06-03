@@ -528,7 +528,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 
   margin: 0;
-  padding: 46px 0 37px 0;
+  padding: 46px 0 43px 0;
 
   list-style: none;
 }
@@ -557,6 +557,7 @@ input[type="radio"].visually-hidden {
 }
 
 .projects-list img {
+  display: block;
   opacity: 0.2;
 }
 
@@ -792,6 +793,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
+.grid-filter-radio:focus + label::before,
+.grid-filter-radio:focus + label::after,
 .grid-filter-radio:hover + label::before,
 .grid-filter-radio:hover + label::after {
   opacity: 1;
