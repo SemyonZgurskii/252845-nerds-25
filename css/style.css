@@ -248,6 +248,10 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+.slider-control:focus + label::before {
+  box-shadow: inset 0 0 0 2px #68bbff;
+}
+
 .slider-control:checked + label::after {
   position: absolute;
   top: 13px;
