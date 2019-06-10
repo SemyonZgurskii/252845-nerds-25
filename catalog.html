@@ -89,7 +89,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="button" class="button">Показать</button>
+        <button type="submit" class="button">Показать</button>
       </form>
     </section>
     
@@ -106,7 +106,7 @@
         </p>
       </div>
       <ul class="templates-list">
-        <li class="templates-item" tabindex="0"> 
+        <li class="templates-item"> 
           <img src="img/sedona.jpg" alt="sedona-template-image" width="360" height="618">
           <div class="templates-item-popup">
             <a href=""><h3>Sedona</h3></a>
@@ -114,7 +114,7 @@
             <a class="button button-red" href="#">9 900 РУБ.</a>
           </div>   
         </li>
-        <li class="templates-item" tabindex="0">
+        <li class="templates-item">
           <img src="img/pink.jpg" alt="pink-template-image" width="360" height="618">
           <div class="templates-item-popup">
             <a href=""><h3>Pink APP</h3></a>
@@ -122,7 +122,7 @@
             <a class="button button-red" href="#">9 900 РУБ.</a>
           </div>
         </li>
-        <li class="templates-item" tabindex="0">
+        <li class="templates-item">
           <img src="img/barbershop.jpg" alt="borodinski-template-image" width="360" height="618">
           <div class="templates-item-popup">
             <a href=""><h3>Barbershop</h3></a>
@@ -130,7 +130,7 @@
             <a class="button button-red" href="#">9 900 РУБ.</a>
           </div>
         </li>
-        <li class="templates-item" tabindex="0">
+        <li class="templates-item">
           <img src="img/mishka.jpg" alt="mishka-template-image" width="360" height="618">
           <div class="templates-item-popup">
             <a href=""><h3>Mishka</h3></a>
@@ -138,7 +138,7 @@
             <a class="button button-red" href="#">9 900 РУБ.</a>
           </div>
         </li>
-        <li class="templates-item" tabindex="0">
+        <li class="templates-item">
           <img src="img/aplus.jpg" alt="aplus-template-image" width="360" height="618">
           <div class="templates-item-popup">
             <a href=""><h3>A plus</h3></a>
@@ -146,7 +146,7 @@
             <a class="button button-red" href="#">9 900 РУБ.</a>
           </div>
         </li>
-        <li class="templates-item" tabindex="0">
+        <li class="templates-item">
           <img src="img/kvast.jpg" alt="kvast-template-image" width="360" height="618">
           <div class="templates-item-popup">
             <a href=""><h3>Kvast</h3></a>
@@ -169,7 +169,7 @@
   <section class="location">
     <h2 class="visually-hidden">Наш адрес</h2>
     <img class="location-map-img" width="1440" height="417" src="img/map-image.jpg" alt="Мы находимся по адресу: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716354532!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559157044660!5m2!1sru!2sru" width="100%" height="417" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716354532!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1559157044660!5m2!1sru!2sru" height="417" style="border:0" allowfullscreen></iframe>
     <div class="location-info">
       <h3 class="visually-hidden">Адрес студии Nerds и кнопка обратной связи</h3>
       <b>nёrds design studio</b>
@@ -212,10 +212,10 @@
   <h2>Напишите нам</h2>
   <div class="write-us-field-container">
     <label>Ваше имя:
-      <input class="write-us-field input-field" type="text" name="name" placeholder="Имя Фамилия">
+      <input class="write-us-field input-field" type="text" name="name" placeholder="Имя Фамилия" required>
     </label>
     <label>Ваш e-mail:
-      <input class="write-us-field input-field" type="email" name="email" placeholder="email@example.com">
+      <input class="write-us-field input-field" type="email" name="email" placeholder="email@example.com" required>
     </label>         
   </div>
   <label>Текст письма:</label>
