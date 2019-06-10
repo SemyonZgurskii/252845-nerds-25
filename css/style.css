@@ -792,6 +792,8 @@ input[type="radio"].visually-hidden {
 
 .filter-form-grid label {
   position: relative;
+
+  cursor: pointer;
 }
 
 .filter-form-grid label::before {
@@ -843,6 +845,8 @@ input[type="radio"].visually-hidden {
 
 .filter-form-features label {
   position: relative;
+
+  cursor: pointer;
 }
 
 .features-filter-checkbox + label::before {
@@ -869,6 +873,11 @@ input[type="radio"].visually-hidden {
 
 .features-filter-checkbox:checked + label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
+}
+
+.features-filter-checkbox:disabled + label:hover,
+.grid-filter-radio:disabled + label:hover {
+  cursor: default;
 }
 
 .templates-list {
