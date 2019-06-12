@@ -37,9 +37,11 @@ writeForm.addEventListener("submit", function(evt) {
     console.log("Нужно ввести логи и пароль");
       if(!writeName.value) {
         writeName.classList.remove("form-input-animation");
+        popup.offsetWidth = popup.offsetWidth;
         writeName.classList.add("form-input-animation");
       } if (!writeEmail.value) {
         writeEmail.classList.remove("form-input-animation");
+        popup.offsetWidth = popup.offsetWidth;
         writeEmail.classList.add("form-input-animation");
       }
   } else {
