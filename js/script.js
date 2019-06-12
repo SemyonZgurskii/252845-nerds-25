@@ -11,7 +11,7 @@ var isStorageSupport = true;
 try {
   storageName = localStorage.getItem("writeName");
 } catch (err) {
-  isStorageSupport = false;      
+  isStorageSupport = false;
 }
 
 write.addEventListener("click", function(evt) {
@@ -28,12 +28,20 @@ write.addEventListener("click", function(evt) {
 writeClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   writeForm.classList.remove("write-form-show");
+  writeName.classList.remove("form-input-animation");
 });
 
 writeForm.addEventListener("submit", function(evt) {
-  if (!writeName.value || !password.value) {
+  if (!writeName.value || !writeEmail.value) {
     evt.preventDefault();
     console.log("Нужно ввести логи и пароль");
+      if(!writeName.value) {
+        writeName.classList.remove("form-input-animation");
+        writeName.classList.add("form-input-animation");
+      } if (!writeEmail.value) {
+        writeEmail.classList.remove("form-input-animation");
+        writeEmail.classList.add("form-input-animation");
+      }
   } else {
     if (isStorageSupport) {
     localStorage.setItem("writeName", writeName.value);
