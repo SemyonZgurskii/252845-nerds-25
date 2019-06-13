@@ -28,20 +28,25 @@ write.addEventListener("click", function(evt) {
 writeClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   writeForm.classList.remove("write-form-show");
+  writeForm.classList.remove("write-form-error")
   writeName.classList.remove("form-input-animation");
+  writeEmail.classList.remove("form-input-animation");
 });
 
 writeForm.addEventListener("submit", function(evt) {
   if (!writeName.value || !writeEmail.value) {
     evt.preventDefault();
+    writeForm.classList.remove("write-form-error")
+    writeForm.offsetWidth = writeForm.offsetWidth;
+    writeForm.classList.add("write-form-error")
     console.log("Нужно ввести логи и пароль");
       if(!writeName.value) {
         writeName.classList.remove("form-input-animation");
-        popup.offsetWidth = popup.offsetWidth;
+        writeName.offsetWidth = writeName.offsetWidth;
         writeName.classList.add("form-input-animation");
       } if (!writeEmail.value) {
         writeEmail.classList.remove("form-input-animation");
-        popup.offsetWidth = popup.offsetWidth;
+        writeEmail.offsetWidth = writeEmail.offsetWidth;
         writeEmail.classList.add("form-input-animation");
       }
   } else {
@@ -56,6 +61,9 @@ window.addEventListener("keydown", function (evt) {
     if (writeForm.classList.contains("write-form-show")) {
       evt.preventDefault();
       writeForm.classList.remove("write-form-show");
+      writeForm.classList.remove("write-form-error")
+      writeName.classList.remove("form-input-animation");
+      writeEmail.classList.remove("form-input-animation");
     }
   }
 });
