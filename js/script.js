@@ -33,6 +33,18 @@ writeClose.addEventListener("click", function(evt) {
   writeEmail.classList.remove("form-input-animation");
 });
 
+writeName.onfocus = function() {
+  if (writeName.classList.contains("form-input-animation")) {
+    writeName.classList.remove("form-input-animation");
+  }
+};
+
+writeEmail.onfocus = function() {
+  if (writeEmail.classList.contains("form-input-animation")) {
+    writeEmail.classList.remove("form-input-animation");
+  }
+};
+
 writeForm.addEventListener("submit", function(evt) {
   if (!writeName.value || !writeEmail.value) {
     evt.preventDefault();
