@@ -417,10 +417,23 @@ input[type="radio"].visually-hidden {
 }
 
 .services-item {
+  position: relative;
+  
   width: 300px;
   margin-right: 100px;
   margin-bottom: 50px;
   padding-top: 146px;
+}
+
+.services-item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  content: "";
+  display: block;
+  width: 300px;
+  height: 146px;
 }
 
 .services-item:nth-child(3n) {
@@ -449,14 +462,12 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.services-web {
-  background-color: #fb565a;
-  background: url("../img/features-web.jpg") no-repeat 0 0;
+.services-web::before {
+  background: #fb565a url("../img/features-web.jpg") no-repeat 0 0;
 }
 
-.services-apps {
-  background-color: #00ca74;
-  background: url("../img/features-apps.jpg") no-repeat 0 0;
+.services-apps::before {
+  background: #00ca74 url("../img/features-apps.jpg") no-repeat 0 0;
 }
 
 .services-apps .button {
@@ -471,9 +482,8 @@ input[type="radio"].visually-hidden {
   background-color: #00aa62;
 }
 
-.services-presentations {
-  background-color: #efc849;
-  background: url("../img/features-presentation.jpg") no-repeat 0 0;
+.services-presentations::before {
+  background: #efc849 url("../img/features-presentation.jpg") no-repeat 0 0;
 }
 
 .services-presentations .button {
@@ -1024,7 +1034,8 @@ input[type="radio"].visually-hidden {
   margin-right: 24px;
 }
 
-.sorting-options a {
+.sorting-options a,
+.sorting-arrows a {
   display: inline-block;
 
   font-size: 14px;
@@ -1037,10 +1048,13 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-options a:hover,
-.sorting-options a:focus {
+.sorting-options a:focus,
+.sorting-arrows a:hover,
+.sorting-arrows a:focus {
   opacity: 0.6;
 }
 
+.sorting-arrows a:active,
 .sorting-options a:active {
   opacity: 1;
 }
