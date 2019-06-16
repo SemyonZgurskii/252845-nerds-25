@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding-bottom: 50px;
 
@@ -449,10 +450,12 @@ input[type="radio"].visually-hidden {
 }
 
 .services-web {
+  background-color: #fb565a;
   background: url("../img/features-web.jpg") no-repeat 0 0;
 }
 
 .services-apps {
+  background-color: #00ca74;
   background: url("../img/features-apps.jpg") no-repeat 0 0;
 }
 
@@ -469,6 +472,7 @@ input[type="radio"].visually-hidden {
 }
 
 .services-presentations {
+  background-color: #efc849;
   background: url("../img/features-presentation.jpg") no-repeat 0 0;
 }
 
@@ -692,6 +696,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.templates-preview {
+  width: 760px;
 }
 
 .templates-filter {
@@ -989,15 +997,15 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;  
+  -webkit-box-align: flex-start;
+      -ms-flex-align: flex-start;
+          align-items: flex-start;  
   margin-bottom: 52px;
 }
 
 .sorting-header {
   margin: 0;
-  margin-top: -1px;
+  margin-top: 3px;
   
   font-size: 18px;
   line-height: 18px;
@@ -1006,19 +1014,24 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-options {
+  max-width: 500px;
   padding-top: 1px;
   margin: 0;
+  margin-left: auto;
 }
 
 .sorting-options a:not(.sorting-arrow) {
-  margin-right: 22px;
+  margin-right: 24px;
 }
 
 .sorting-options a {
+  display: inline-block;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+  vertical-align: middle;
 
   opacity: 0.3;
 }
@@ -1032,12 +1045,19 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.sorting-arrows {
+  margin: 0;
+}
+
 .sorting-arrow {
   position: relative;
 
   display: inline-block;
   width: 25px;
-  height: 15px;  
+  height: 15px;
+  margin-bottom: 2px;
+
+  vertical-align: middle;
 }
 
 .sorting-arrow::before {
@@ -1193,6 +1213,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-bottom: 60px;
@@ -1204,9 +1226,9 @@ input[type="radio"].visually-hidden {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 50px;
+  min-width: 50px;
   height: 50px;
-  margin-right: 11px;
+  margin-right: 10px;
   padding: 21px;
   padding-top: 17px;
 
@@ -1214,6 +1236,8 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 500;
   color: #000000;
+  vertical-align: middle;
+  text-align: center;
 
   background-color: #eeeeee;
   border-radius: 2px;
@@ -1233,7 +1257,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item.pagination-item-current {
-  padding: 18px;
+  padding: 18px 16px;
   padding-top: 14px;
 
   background-color: #ffffff;
